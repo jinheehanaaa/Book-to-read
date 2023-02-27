@@ -107,6 +107,7 @@
 - Cyclomatic Complexity to measure complexity in code bases but cannot distinguish from essential complexity or accidental complexity
 
 ## Connascence
+- For more information go to [1]
 ### Static connascence
 - Source-code-level coupling
 ### Dynamic connascence
@@ -129,6 +130,8 @@
 
 </details>  <!-- End of the Chapter-->
 
+# Internal Resources
+- [1] [Connascence: beyond Coupling and Cohesion - Marco Consolaro](../Supplement/001-Connascence_beyond_Coupling_and_Cohesion-Marco_Consolaro.md)
 
 
 
