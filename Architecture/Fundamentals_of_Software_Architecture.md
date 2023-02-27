@@ -1,6 +1,6 @@
 
 
-<details>
+<details> <!-- Chapter 1 -->
 <summary>1. Introduction</summary>
 
 # Expectations of an Architect
@@ -31,9 +31,9 @@
 - To understand important trade-offs in architecture, developers must understand some basic concepts and terminology concerning components, moularity, coupling, and connascence
 
 
-</details>
+</details>  <!-- End of the Chapter-->
 
-<details>
+<details> <!-- Chapter 2 -->
 <summary>2. Architectural Thinking</summary>
 
 # Architecture Versus Design
@@ -70,8 +70,64 @@
 - - EX: Automated checklists
 - - EX: Repetitive manual code refactoring tasks
 - Frequent Code Review
--
-</details>
+
+</details>   <!-- End of the Chapter-->
+
+<details> <!-- Chapter 3 -->
+<summary>3. Modularity</summary>
+
+- Module for backward compatibility
+# Measuring Modularity
+## Cohesion
+- Measure of how related the parts are to one another
+- Cohesion is a less precise metric than coupling
+- Ex: Customer Module (Customer Maintenance, Order Maintenance)
+- The Chidamber and Kemerer Lack of Cohesion in Methods (LCOM) for measuring the structural cohesion of a module
+- The LCOM metric is useful to architects who are analyzing code bases in order to move from one architectual style to another
+
+## Coupling
+- Afferent for measuring number of incoming connections to a code artifact
+- Efferent for measuring number of outgoing connections to other code artifacts
+
+## Abstractness, Instability, and Distance from the Main Sequence
+## Abstractness
+- The ratio of abstract artifacts (abstract classes, interfaces, etc) to concrete artifacts (implementation)
+- Measures abstractness versus implementation
+## Instability
+- the ratio of efferent coupling to the sum of both efferent and afferent coupling
+- Instability determines the volatility of a code base
+
+## Distance from the Main Sequence
+- A derived metric based on instability and abstractness
+- measures the similarity or dissimilarity between two objects
+- ability to provide a quantitative measure of how different or similar two objects are
+- Ideal relationship between abstractness and instability
+
+## Limitations of Metrics
+- Cyclomatic Complexity to measure complexity in code bases but cannot distinguish from essential complexity or accidental complexity
+
+## Connascence
+### Static connascence
+- Source-code-level coupling
+### Dynamic connascence
+- Analyses calls at runtime
+
+## Connascence properties
+### Strength
+- Different types of connascence are more
+- Architects should prefer static connascence to dynamic
+### Locality
+- Measures how proximal the modules are to each other in the code base
+### Degree
+
+## Unifying Coupling and Connascence Metrics
+- An Architect should care about how modules are implemented as well as how modules are coupled
+
+
+## From Modules to Components
+
+
+</details>  <!-- End of the Chapter-->
 
 
 
