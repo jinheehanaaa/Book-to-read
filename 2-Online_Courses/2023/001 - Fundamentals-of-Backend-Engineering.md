@@ -7,7 +7,7 @@
 
 </details>
 
-<details> <!-- 002 -->
+<details> <!-- START of 002 -->
 <summary>002 - Backend Communication Design Patterns</summary>
 
 <!-- ##### START OF TOPIC ##### -->
@@ -94,6 +94,36 @@
 </details>
 <!-- ##### END OF TOPIC ##### -->
 
+<!-- ##### START OF TOPIC: PUSH ##### -->
+<details>
+<summary>Push</summary>
+
+# Request/response isn't always ideal
+- Client wants real time notification from backend
+- - A user just logged in
+- - A message is just received
+- Push model is good for certain cases (Ex: Chat app)
+
+# What is Push
+- Client connects to a server
+- Server sends data to the client
+- Client doesn't have to request anything
+- Protocol must be bidirectional
+- Used by RabbitMQ
+
+# Push Pros and Cons
+- Pros
+- - Real time
+- Cons
+- - Clients must be online
+- - Clients might not be able to handle
+- - Requires a bidirectional protocol
+- - Polling is preferred for light clients
+
+</details>
+<!-- ##### END OF TOPIC: PUSH ##### -->
+
+
 <!-- ##### START OF TOPIC ##### -->
 <details>
 <summary>TEMP</summary>
@@ -104,6 +134,9 @@
 <!-- ##### END OF TOPIC ##### -->
 
 
-</details>
+</details> <!-- END OF 002 -->
 
+
+# Resources
+- https://www.udemy.com/course/fundamentals-of-backend-communications-and-protocols/
 
