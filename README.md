@@ -1,6 +1,6 @@
 # Objective
-- Read book & Take online lecture for mental model development
-- Learn Software Architecture & Backend Engineering
+- Read book & Take online lecture for learning mental model development
+- Software Architecture & Backend Engineering
 - Learn why something happens & trade-off
 
 <details> <!--2023 BOOK-->
@@ -33,7 +33,7 @@
 
 
 <details>  <!-- TODO LIST -->
-<summary>TODO LIST</summary>
+<summary>TODO LIST LATER</summary>
 
 - Understand Connascence
 

@@ -1,1 +1,23 @@
 .personal
+
+3-Practice/2023/001 - Fundamentals-of-Backend-Engineering/002/Browser-connection-pool/package-lock.json
+
+3-Practice/2023/001 - Fundamentals-of-Backend-Engineering/002/long-polling/package-lock.json
+
+3-Practice/2023/001 - Fundamentals-of-Backend-Engineering/002/long-polling/package.json
+
+3-Practice/2023/001 - Fundamentals-of-Backend-Engineering/002/rabbitmq/package-lock.json
+
+*.out
+
+3-Practice/2023/001 - Fundamentals-of-Backend-Engineering/002/short-polling/package-lock.json
+
+3-Practice/2023/001 - Fundamentals-of-Backend-Engineering/002/short-polling/package.json
+
+3-Practice/2023/001 - Fundamentals-of-Backend-Engineering/002/server-sent-events/package-lock.json
+
+3-Practice/2023/001 - Fundamentals-of-Backend-Engineering/002/server-sent-events/package.json
+
+3-Practice/2023/001 - Fundamentals-of-Backend-Engineering/002/websocket-push/package-lock.json
+
+3-Practice/2023/001 - Fundamentals-of-Backend-Engineering/002/websocket-push/package.json
