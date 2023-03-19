@@ -130,6 +130,60 @@
 
 </details>  <!-- End of the Chapter-->
 
+
+
+<details> <!-- Chapter 4 -->
+<summary>4. Architecture Characteristics Defined</summary>
+
+# Architecture characteristic
+## Specifies a nondomain design consideration
+- Explicit
+- What the application should do
+- Specify a certain level of performance for the application
+
+## Influences some structural aspect of the design
+- Implicit
+- Special structural consideration to succeed
+- Ex: availability, reliability, and security
+## Is critical or important to application success
+- Choose the fewest architecture characteristics rather than the most possible
+
+# Operational Architecture Characteristics
+- Availability
+- Continuity
+- Performance
+- Recoverability
+- Reliability/Safety
+- Robustness
+- Scalability
+
+# Structural Architecture Characteristics
+- Configurability
+- Extensibility
+- Installability
+- Leverageability/reuse
+- Localization
+- Maintainability
+- Portability
+- Supportability
+- Upgradeability
+
+# Cross-Cutting Architecture Characteristics
+- Accessibility
+- Archivability
+- Authentication
+- Authorization
+- Legal
+- Privacy
+- Security
+- Supportability
+- Usability/Achievability
+
+
+
+
+</details>  <!-- End of the Chapter-->
+
 # Internal Resources
 - [1] [Connascence: beyond Coupling and Cohesion - Marco Consolaro](../Supplement/001-Connascence_beyond_Coupling_and_Cohesion-Marco_Consolaro.md)
 

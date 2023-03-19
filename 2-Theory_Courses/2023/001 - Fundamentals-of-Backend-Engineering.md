@@ -729,7 +729,6 @@
 - Jumbo frames MTU goes to 9000 or more
 - MSS can be larger in jumbo frames cases
 
-
 </details>
 <!-- ##### END OF TOPIC: TCP ##### -->
 
@@ -737,6 +736,31 @@
 
 </details>
 <!-- ########## END of 003 ########## -->
+
+
+
+<!-- ##### START OF TOPIC: ##### -->
+<details>
+<summary>TLS</summary>
+
+- Transport Layer Security
+
+# Why TLS
+- We encrypt with symmetric key algorithms
+- We need to exchange the symmetric key
+- Key exchange uses asymmetric key (PKI)
+- Authenticate the server
+- Extensions (SNI, preshareed, 0RTT)
+
+# TLS Summary
+- Vanilla HTTP
+- HTTPS
+- TLS 1.2 Handshake (two round trips)
+- Diffie Hellman
+- TLS 1.3 Improvements (one round trip can be zero)
+
+</details>
+<!-- ##### END OF TOPIC: ##### -->
 
 
 <!-- ##### START OF TOPIC: ##### -->
