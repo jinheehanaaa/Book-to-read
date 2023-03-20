@@ -1,14 +1,16 @@
 
 
-
+<!-- ########## START OF CHAPTER: 000 ########## -->
 <details> <!-- OBJECTIVE -->
 <summary>Objective</summary>
 
 - Learn Backend Engineering
 
 </details>
+<!-- ########## END OF CHAPTER: 002 ########## -->
 
-<!-- ########## START of 002 ########## -->
+
+<!-- ########## START OF CHAPTER: 002 ########## -->
 <details>
 <summary>002 - Backend Communication Design Patterns</summary>
 
@@ -398,13 +400,13 @@
 
 
 </details>
-<!-- ########## END of 002 ########## -->
+<!-- ########## START OF CHAPTER: 002 ########## -->
 
 
 
-<!-- ########## START of 003 ########## -->
+<!-- ########## START OF CHAPTER: 003 ########## -->
 <details>
-<summary>002 - Backend Communication Design Patterns</summary>
+<summary>003 - Backend Communication Design Patterns</summary>
 
 <!-- ##### START OF TOPIC: PROTOCOL PROPERTIES ##### -->
 <details>
@@ -733,13 +735,7 @@
 <!-- ##### END OF TOPIC: TCP ##### -->
 
 
-
-</details>
-<!-- ########## END of 003 ########## -->
-
-
-
-<!-- ##### START OF TOPIC: ##### -->
+<!-- ##### START OF TOPIC:TLS ##### -->
 <details>
 <summary>TLS</summary>
 
@@ -760,7 +756,63 @@
 - TLS 1.3 Improvements (one round trip can be zero)
 
 </details>
-<!-- ##### END OF TOPIC: ##### -->
+<!-- ##### END OF TOPIC:TLS ##### -->
+
+<!-- ##### START OF TOPIC: HTTP/1.1 ##### -->
+<details>
+<summary>HTTP/1.1</summary>
+
+# HTTPS
+- Key exchange between server and client (synchronous for fast communication)
+
+# HTTP 1.0
+1. Client open connection
+2. request connection
+3. Client receive & close connection
+4. Open connection so on
+- New TCP connection with each request
+- Slow
+- Buffering (transfer-encoding:chunked didn't exist)
+- No multi-homed websites (HOST header)
+
+# HTTP 1.1
+1. Client open connection
+2. request files & keep connection alive
+3. Client receives
+4. request files and so on
+5. Client receives so on
+- Persisted TCP Connection
+- Low Latency & Low CPU Usage
+- Streaming with Chunked transfer
+- Pipelining (disabled by default)
+- Proxying & Multi-homed websites
+- - 1 IP can holds multiple websites
+
+# HTTP/2
+- SPDY
+- Compression
+- Multiplexing
+- Server Push
+- Secure by default
+- Protocol Negotiation during TLS (NPN/ALPN)
+
+# HTTP over QUIC (HTTP/3)
+- Replaces TCP with QUIC (UDP with Congestion control)
+- All HTTP/2 features
+- Without HOL
+
+</details>
+<!-- ##### END OF TOPIC: HTTP/1.1 ##### -->
+
+
+
+</details>
+<!-- ########## END OF CHAPTER: 003 ########## -->
+
+
+
+
+
 
 
 <!-- ##### START OF TOPIC: ##### -->
