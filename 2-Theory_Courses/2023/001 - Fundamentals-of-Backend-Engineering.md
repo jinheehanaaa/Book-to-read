@@ -266,7 +266,7 @@
 
 <!-- ##### START OF TOPIC: Multiplexing vs Demultiplexing ##### -->
 <details>
-<summary>TEMP</summary>
+<summary>Multiplexing vs Demultiplexing </summary>
 
 - HTTP/2, QUIC, Connection Pool, MPTCP
 
@@ -895,6 +895,62 @@
 </details>
 <!-- ##### END OF TOPIC: HTTP/3 ##### -->
 
+<!-- ##### START OF TOPIC: gRPC ##### -->
+<details>
+<summary>gRPC</summary>
+
+- Taking HTTP/2 to the next level
+
+# Client Server Communication Protocol
+- SOAP, REST, GraphQL
+- SSE, WebSockets
+- Raw TCP
+
+# The Problem with Client Libraries
+- Any communication protocol needs client library for the language of choice
+- - SOAP Library
+- - HTTP Client Library
+- Hard to maintain and patch client libraries
+- - HTTP/1.1 HTTP/2, new features, security etc.
+
+# Why gRPC was invented?
+- Client Library: One library for popular languages
+- Protocol: HTTP/2 (hidden implementation)
+- Message Format: Protocol buffers as format
+
+# gRPC modes
+## Unary RPC
+- request/response
+## Server streaming RPC
+- server streaming (ex: downloading content from server)
+## Client streaming RPC
+- client streaming (ex: uploading content to the server)
+## Bidirectional streaming RPC
+- Both server and client
+
+# gRPC Pros & Cons
+## Pros
+- Fast & Compact
+- One Client Library
+- Progress Feedback (upload)
+- Cancel Request (H2)
+- H2/Protobuf
+## Cons
+- Schema
+- Thick Client
+- Proxies
+- Error handling
+- No native browser support
+- Timeouts (pub/sub)
+
+# Can I write my own protocol too?
+- Yes, you can, Spotify did (Hermes) but guess what
+- Only you will be using it so...
+- Spotify moved to gRPC not because of limitation of Hermes but because they are isolated.
+
+
+</details>
+<!-- ##### END OF TOPIC: gRPC ##### -->
 
 
 
@@ -903,20 +959,15 @@
 
 
 
-<!-- ##### START OF TOPIC: ##### -->
+
+<!-- ##### START OF TOPIC: TEMP ##### -->
 <details>
 <summary>TEMP</summary>
 
 - Content
 
 </details>
-<!-- ##### END OF TOPIC: ##### -->
-
-
-</details>
-
-<!-- ########## END OF 002 ########## -->
-
+<!-- ##### END OF TOPIC: TEMP ##### -->
 
 # Resources
 - https://www.udemy.com/course/fundamentals-of-backend-communications-and-protocols/
