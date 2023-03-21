@@ -839,6 +839,26 @@
 </details>
 <!-- ##### END OF TOPIC: WebSocket ##### -->
 
+<!-- ##### START OF TOPIC: ##### -->
+<details>
+<summary>HTTP/2</summary>
+
+# HTTP/2 Pros
+- Multiplexing over Single Connection (save resources)
+- Compression (Headers & Data)
+- Server Push
+- Secure by default
+- Protocol Negotiation during TLS (ALPN)
+
+# HTTP/2 Cons
+- TCP head of line blocking
+- Server Push never picked up
+- High CPU usage
+
+
+
+</details>
+<!-- ##### END OF TOPIC: ##### -->
 
 
 
