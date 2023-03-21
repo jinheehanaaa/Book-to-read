@@ -805,13 +805,45 @@
 <!-- ##### END OF TOPIC: HTTP/1.1 ##### -->
 
 
+<!-- ##### START OF TOPIC: WebSocket ##### -->
+<details>
+<summary>WebSocket</summary>
+
+# WebSockets use cases
+- Chatting
+- Live Feed
+- Multiplayer gaming
+- Showing client progress/logging
+
+# Websockets Pros and COns
+## Pros
+- Full-duplex (no polling)
+- HTTP compatible
+- Firewall friendly (standard)
+## Cons
+- Proxying is tricky
+- L7 LB challenging (timeouts)
+- Stateful, difficult to horizontally scale
+
+# Do you have to use WebSockets?
+- It's true that many web-based chat app plugins work well and provide a good user experience, even when using HTTP. However, these plugins typically use techniques to mitigate the latency issues associated with HTTP. For example:
+
+1. Long Polling: Some chat app plugins use long polling, where the client sends a request to the server, and the server keeps the request open until new data is available. This technique can help reduce latency by allowing the server to respond immediately when new data is available.
+
+2. Server-Sent Events (SSE): SSE is a server-side technology that allows the server to push new data to the client when it becomes available. This technique can help reduce latency by allowing the server to send data immediately when it is available, without waiting for the client to request it.
+
+3. Polling with a low interval: Some chat app plugins use polling with a low interval, where the client sends a request to the server every few seconds to check for new data. While this technique can result in higher network traffic and battery drain, it can still provide a good user experience if the interval is set low enough.
+
+- These techniques can help mitigate the latency issues associated with HTTP and provide a good user experience for chat app plugins. However, if low latency is critical for your chat app, WebSockets or other real-time communication protocols may still be a better choice.
+
+</details>
+<!-- ##### END OF TOPIC: WebSocket ##### -->
+
+
+
 
 </details>
 <!-- ########## END OF CHAPTER: 003 ########## -->
-
-
-
-
 
 
 
