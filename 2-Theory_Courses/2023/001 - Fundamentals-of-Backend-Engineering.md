@@ -839,7 +839,7 @@
 </details>
 <!-- ##### END OF TOPIC: WebSocket ##### -->
 
-<!-- ##### START OF TOPIC: ##### -->
+<!-- ##### START OF TOPIC: HTTP/2 ##### -->
 <details>
 <summary>HTTP/2</summary>
 
@@ -858,7 +858,43 @@
 
 
 </details>
-<!-- ##### END OF TOPIC: ##### -->
+<!-- ##### END OF TOPIC: HTTP/2 ##### -->
+
+
+<!-- ##### START OF TOPIC: HTTP/3 ##### -->
+<details>
+<summary>HTTP/3</summary>
+
+- HTTP over QUICK Multiplexed streams
+
+# HTTP/2 Disadvantages
+## TCP head of line blocking
+- TCP segments must be delivered in order
+- But streams don't have to
+- Blocking requests
+
+# HTTP/3 & QUIC (Solution to HTTP/2)
+- HTTP/3 uses QUIC
+- Like HTTP/2, QUIC has streams
+- But QUIC use UDP instead
+- Application decides the boundary
+
+# HTTP/3 & QUIC Pros
+- QUIC has many other benefits
+- Merges Connection setup + TLS in one handshake
+- Has congestion control at stream level
+- Connection migration (connectionID)
+- Why not HTTP/2 over QUIC?
+- - Header compression algorithm
+
+# HTTP/3 & QUIC Cons
+- Takes a lot of CPU (parsing logic)
+- UDP could be blocked
+- IP Fragmentations is the enemy
+
+</details>
+<!-- ##### END OF TOPIC: HTTP/3 ##### -->
+
 
 
 
@@ -884,4 +920,5 @@
 
 # Resources
 - https://www.udemy.com/course/fundamentals-of-backend-communications-and-protocols/
+- QUIC
 
