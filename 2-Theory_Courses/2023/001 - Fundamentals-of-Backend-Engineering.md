@@ -1102,7 +1102,7 @@
 
 <!-- ########## START OF CHAPTER: 005 ########## -->
 <details>
-<summary>005. Backend Execution Patterns</summary>
+<summary>005 - Backend Execution Patterns</summary>
 
 
 <!-- ##### START OF TOPIC: Process vs Thread ##### -->
@@ -1284,6 +1284,98 @@
 
 </details>
 <!-- ########## END OF CHAPTER: 005 ########## -->
+
+
+<!-- ########## START OF CHAPTER: 006 ########## -->
+<details> <!-- OBJECTIVE -->
+<summary>006 - Proxying and Load Balancing</summary>
+
+<!-- ##### START OF TOPIC: Proxy vs. Reverse Proxy ##### -->
+<details>
+<summary>Proxy vs. Reverse Proxy</summary>
+
+# Proxy vs. Reverse Proxy
+## Proxy
+- I want to go to google.com through proxy: my-proxy.com
+- my-proxy.com
+- Google says "I just know that I received a request from my-proxy"
+
+### Proxy Use Cases
+- Caching
+- Anonymity
+- Logging
+- Block Sites
+- Microservices
+
+## Reverse Proxy
+- I want to go google.com
+- google.com (Frontend server or Edge server )
+- google-server1, google-server2 (Client doesn't know about backend server)
+
+### Reverse Proxy Use Cases
+- Caching
+- Load Balancing
+- Ingress
+- Canary Deployment
+- Microservices
+
+</details>
+<!-- ##### END OF TOPIC: Proxy vs. Reverse Proxy ##### -->
+
+<!-- ##### START OF TOPIC: Layer 4 vs. Layer 7 Load Balancers ##### -->
+<details>
+<summary>Layer 4 vs. Layer 7 Load Balancers</summary>
+
+# Load Balancer (fault tolerant)
+- Load Balancer is reverse proxy
+
+## Layer 4 Load Balancer
+- TCP Connection between Client and Load Balancer
+- TCP Connection between Load Balancer and backend server
+
+### Layer 4 Load Balancer (Pros and Cons)
+#### Pros
+- Simpler load balancing
+- Efficient (no data lookup)
+- More secure
+- Works with any protocol
+- One TCP connection (NAT)
+
+#### Cons
+- No smart load balancing
+- NA microservices
+- Sticky per connection
+- No caching
+- Protocol unaware (can be dangerous) bypass rules
+
+## Layer 7 Load Balancer
+- Same as Layer 4 Load Balancer
+- When a client connects to the L7 load balancer, it becomes protocol specific.
+- Any logical "request" will be forwarded to a new backend server.
+- This could be one or more segments
+
+### Layer 7 Load Balancer (Pros and Cons)
+#### Pros
+- Smart load balancing
+- Caching
+- Great for microservices
+- API Gateway logic
+- Authentication
+
+#### Cons
+- Expensive (looks at data)
+- Decrypts (terminates TLS)
+- Two TCP Connections
+- Must share TLS certificate
+- Needs to buffer
+- Needs to understand protocol
+
+</details>
+<!-- ##### END OF TOPIC: Layer 4 vs. Layer 7 Load Balancers ##### -->
+
+
+</details>
+<!-- ########## END OF CHAPTER: 006 ########## -->
 
 
 <!-- ##### START OF TOPIC: TEMP ##### -->
