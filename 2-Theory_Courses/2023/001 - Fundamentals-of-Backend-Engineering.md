@@ -1107,7 +1107,7 @@
 
 <!-- ##### START OF TOPIC: Process vs Thread ##### -->
 <details>
-<summary>Process vs Thread</summary>
+<summary>Process vs. Thread</summary>
 
 # What is a Process?
 - A set of instructions
@@ -1189,12 +1189,101 @@
 <!-- ##### END OF TOPIC: How the Backend Accepts Connections ##### -->
 
 
+<!-- ##### START OF TOPIC: Reading and Sending Data ##### -->
+<details>
+<summary>Reading and Sending Data</summary>
+
+# Send and receive buffers
+- Client sends data on a connection
+- Kernel puts data in receive queue
+- Kernel ACKs (may delay) and update window
+- App calls read to copy data (Copying is expensive!)
+
+
+</details>
+<!-- ##### END OF TOPIC: Reading and Sending Data ##### -->
+
+
+<!-- ##### START OF TOPIC: The Listener, The Accepter and the Reader ##### -->
+<details>
+<summary>The Listener, The Accepter and the Reader</summary>
+
+# Single Listener/Single Worker Thread
+## node.js
+- Single Thread
+
+# Single Listener/Multiple Worker threads
+## Memcached
+- Multiple threads with single acceptor
+
+# Single Listener/Multiple Worker threads with load balancing
+## RAMCloud
+
+# Multiple Threads single Socket
+## Nginx
+- Multiple threads with multiple acceptors
+
+# Multiple Listeners on the same port
+## Nginx, Envoy
+- Multiple threads with socket sharding (SO_REUSEPORT)
+
+
+</details>
+<!-- ##### END OF TOPIC: The Listener, The Accepter and the Reader  ##### -->
+
+
+<!-- ##### START OF TOPIC: Idempotency ##### -->
+<details>
+<summary>Idempotency</summary>
+
+- Resending the Request without affecting backend
+
+# What is idempotency?
+- API /postcomment
+- Takes comment and appends it to table
+- What if the user/proxy retries it?
+- Very bad for financial systems
+- Idempotent request can be retried without affecting backend
+- Easy implementation send a requestId
+- Also known as idempotency token
+
+# In HTTP
+- GET is idempotent
+- POST isn't, but we can make it
+- Browsers and proxies treat GET as idempotent
+- Make sure your GETs are idempotent
+
+
+</details>
+<!-- ##### END OF TOPIC: Idempotency ##### -->
+
+
+<!-- ##### START OF TOPIC: Nagle's algorithm ##### -->
+<details>
+<summary>Nagle's algorithm</summary>
+
+# Nagle's algorithm
+- In the telnet days sending a single byte in a segment is a waste
+- Combine small segments and send them in a single one
+- The client can wait for a full MSS before sending the segment
+- No wasted 40 bytes header (IP + TCP) for few bytes of data
+
+# Problem with Nagle's algorithm
+- Sending large data causes delay
+
+# Disabling Nagle's algorithm
+- Most clients today disable Nagle's algorithm
+- I rather get performance than small bandwidth
+- TCP_NODELAY
+- Curl disabled this back in 2016 by default because TLS handshake was slowed down
+
+</details>
+<!-- ##### END OF TOPIC: Nagle's algorithm  ##### -->
+
 
 
 </details>
 <!-- ########## END OF CHAPTER: 005 ########## -->
-
-
 
 
 <!-- ##### START OF TOPIC: TEMP ##### -->
@@ -1207,6 +1296,8 @@
 <!-- ##### END OF TOPIC: TEMP ##### -->
 
 # Resources
-- https://www.udemy.com/course/fundamentals-of-backend-communications-and-protocols/
-- QUIC
+- [This](https://www.udemy.com/course/fundamentals-of-backend-communications-and-protocols/)
+- [Intro to QUIC](https://youtu.be/EkVd4k0R4Tw)
+- [Idempotency]
+- [Nagle's algorithm]
 
