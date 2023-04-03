@@ -1378,6 +1378,25 @@
 <!-- ########## END OF CHAPTER: 006 ########## -->
 
 
+<!-- ########## START OF CHAPTER: Extra ########## -->
+<details> <!-- OBJECTIVE -->
+<summary>Extra</summary>
+
+
+<!-- ##### START OF TOPIC: How ChatGPT uses Server Sent Events ##### -->
+<details>
+<summary>How ChatGPT uses Server Sent Events</summary>
+
+- ??
+
+</details>
+<!-- ##### END OF TOPIC: How ChatGPT uses Server Sent Events ##### -->
+
+</details>
+<!-- ########## END OF CHAPTER: Extra ########## -->
+
+
+
 <!-- ##### START OF TOPIC: TEMP ##### -->
 <details>
 <summary>TEMP</summary>
