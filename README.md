@@ -1,7 +1,7 @@
 # Objective
-- Read book & Take online lecture for learning mental model development
+- Read book & Take online theory lecture
 - Software Architecture & Backend Engineering
-- Learn why something happens & trade-off
+- trade-off
 
 <details> <!--2023 BOOK-->
 <summary>2023</summary>
@@ -12,6 +12,8 @@
 # Online Courses
 1. Fundamentals of Backend Engineering - Udemy
 2. DevOps Zero to Hero Course - Abhishek. Veeramalla
+3. MIT MAS.S62 Cryptocurrency Engineering and Design
+
 
 </details>
 
