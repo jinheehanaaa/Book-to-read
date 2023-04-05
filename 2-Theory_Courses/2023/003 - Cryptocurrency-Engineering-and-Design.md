@@ -68,5 +68,65 @@
 
 
 
+<!-- ##### START OF TOPIC: 2. Proof of Work and Mining ##### -->
+<details>
+<summary>2. Proof of Work and Mining</summary>
+
+# Distributed consensus
+- Log
+
+## Crash Fault tolerence model
+- Tolerate crash
+- BUT, We still need more than crash
+- - We want to be able to tolerate actively malicious behaviour
+
+## Byzantine fault tolerance distributed consensus
+- Tolerate actively malicious behaviour
+- Old idea
+
+## Addressing the Sybil attack Problem
+
+# Lecture 2
+## Preventing sybil attacks
+- Hashcash (Stop email spam, but didn't take off)
+### Signature collision with a fixed string
+- Increased costs of equivocation/sybil resistance
+- scalable
+
+# Block chain
+## Definition
+- m = message, nonce r, target t
+- hash(m, r) = h; h < t
+## Message for block N includes some data and hash of block N-1
+- m(n) = (data, h(n-1))
+- EX: m(2) = (data(2), hash(data(1), r(1)))
+## Hashing the block data
+### block has following data & we hash this block to generate new block
+- - privious hash (prev: 00ce)
+- - current message (msg: hi)
+- - nonce (nonce: 5ffc)
+- We use hash block as identifier (hash: 00db)
+- Next block includes hash of last block
+# Chain forks
+- Can have 2 branches at a given height (# of blocks from origin)
+- Highest (most work) wins, Everyone uses chain with most work
+- Less work chains can be discarded after the fact. "Reorg"
+
+# Pros & Cons of Proof of Work
+## Pros
+- Anonymous
+- Memoryless
+- Scalable
+- Non-interactive
+- Tied to real world
+
+## Cons
+- All nonces fail (Almost all attempts fail)
+- Electricity
+- 51% attacks
+
+</details>
+<!-- ##### END OF TOPIC: 2. Proof of Work and Mining  ##### -->
+
 # Resources
 - [MIT Opencourse](https://www.youtube.com/watch?v=IJquEYhiq_U&list=PLUl4u3cNGP61KHzhg3JIJdK08JLSlcLId)
