@@ -98,6 +98,36 @@
 <!-- ##### END OF TOPIC: 003 - Intoduction to Blockchain: Architecture ##### -->
 
 
+<!-- ##### START OF TOPIC: 004 - Intoduction to Blockchain: Conceptualization ##### -->
+<details>
+<summary>004 - Intoduction to Blockchain: Conceptualization</summary>
+
+# Block Chain
+- Always include it in the longest chain
+- Other chains are forks (Orphaned Blocks)
+
+# The Permissioned Model
+- Strict notion of security and privacy
+- Greater transactional throughput
+
+# IPFS Tool
+
+# Hyperledger Fabric
+- A permissioned blockchain framework
+- Strong privacy and confidential transactions
+- Channels (Subnet of peer) for restricted visibility
+- Fabric has no notion of mining, use the notion of distributed consensus under a closed environment
+
+# The Fabric Network
+- IBM Code Tech Talk
+
+
+</details>
+<!-- ##### END OF TOPIC: 004 - Intoduction to Blockchain: Conceptualization ##### -->
+
+
+
+
 # Terminology
 ## Public Ledger
 - Local copy
