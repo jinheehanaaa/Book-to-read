@@ -41,6 +41,36 @@
 </details>
 <!-- ##### END OF TOPIC: 001 - Intoduction to Blockchain ##### -->
 
+<!-- ##### START OF TOPIC: 002 - Intoduction to Blockchain ##### -->
+<details>
+<summary>002 - Intoduction to Blockchain</summary>
+
+# Hash Functions
+- H(x) = x % n
+- Cryptographically Secured
+- - One way
+- - If x1 != x2, then H(x1) != H(x2)
+
+# Avalanche effect
+- A small change in the data results in a significant change in the ouput
+
+# time-stamp a digital document
+- Harber and Stornetta, 1991 for more information
+- For securing digital document
+# Merkle Trees
+- Can secure multiple documents
+- Peer to Peer Networks: Other peers do not lie about a block
+- Bitcoin implemenation: No one can lie about a transaction
+
+# Blockchain & Bitcoin
+## Biotcoin
+- Completely decentralized
+- Peer-to-peer
+- Permissionless
+
+</details>
+<!-- ##### END OF TOPIC: 002 - Intoduction to Blockchain ##### -->
+
 # Terminology
 ## Public Ledger
 - Local copy
