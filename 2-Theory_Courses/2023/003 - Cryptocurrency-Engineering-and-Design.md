@@ -128,5 +128,99 @@
 </details>
 <!-- ##### END OF TOPIC: 2. Proof of Work and Mining  ##### -->
 
+
+<!-- ##### START OF TOPIC: 3. Signatures ##### -->
+<details>
+<summary>3. Signatures </summary>
+
+# Signatures
+## Lamport Signatures
+### Pros
+- hash
+### Cons
+- 1 time use
+- kind of big (8kb sig, 16k priv/pub key)
+
+# How can I use key more than once?
+## Make multiple public key (Less efficient)
+- It works with cost of extra bytes
+## Make multiple hash functions (Efficient)
+- h0 = H(x, 0)
+- h1 = H(x, 1) and so on
+- So we can do 16kb priv => 32kb pub
+## Multiple use hash signatures
+- h0 = H(x,0)
+- h1 = H(x,1)
+- ??
+## How to deal with large pub key?
+- Commit to pubkey with hash (hash of all 16KB)
+- Signature 8k -> 24k
+- Pubkey hash (or PKH)
+
+## Pubkey Hash
+- Used in bitcoin and all other cryptocurrencies
+- Size benefit
+- Signature is still big
+
+## Merkle Tree
+- Stores much smaller private key
+- Commit to much smaller public key
+- Signature is still big but it's ok in general
+
+## RSA
+- A one way function but not a hash function
+- But Bitcoin (and other coins) uses elliptic curve signatures
+
+## Elliptic Curves
+- Define point additioon line of 3 points
+- Generator point
+- private key a = 256 bit scalar
+- public key A = a*G
+- 32 byte x coord, 32 byte y coord = 64B
+- Since curve is symmetric about x-axis, can encode x-coord only and 1 bit for y. Down to 33 bytes
+
+# ECDSA
+- What Bitcoin, other coins use today
+- It's ugly
+
+# ECsig
+- Have message m, privkey a
+- A new random private key k
+- Public key just for the signature, R = k*G
+- Signer, s = k - hash(m, R)a
+- signature = R, s
+- ONLY ELLIPCTIC CURVE OPERATION is "R" (Others are all scaler, so ECsig is very fast)
+- Verification is CPU-Intense
+- - Multiplying by G => pre-compute coefficient times G, store them in RAM (Less CPU-Intense)
+- - Multiplying by A => different each time for all different signatures
+
+# Fun With Points
+## Diffie Hellman
+- A = aG
+- B = bG
+- aB = bA = (aG)b = (bG)a = (ab)G = C
+- Shared Point (C)
+- A, B are public
+- C is not public
+- USE CASE: HTTPS Request
+
+## Combination
+- D = A + B = (a+b)G = dG
+- private key d can sign for public key D
+
+# Problem
+- If quantum computer becomes popular
+- - All elliptic stuffs stop working
+- - Hash stuffs still works
+
+
+</details>
+<!-- ##### END OF TOPIC: 3. Signatures  ##### -->
+
+
+
+
 # Resources
 - [MIT Opencourse](https://www.youtube.com/watch?v=IJquEYhiq_U&list=PLUl4u3cNGP61KHzhg3JIJdK08JLSlcLId)
+
+# Other Resources
