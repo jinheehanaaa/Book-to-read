@@ -39,9 +39,9 @@
 
 
 </details>
-<!-- ##### END OF TOPIC: 001 - Intoduction to Blockchain ##### -->
+<!-- ##### END OF TOPIC: 001 - Intoduction to Blockchain: History ##### -->
 
-<!-- ##### START OF TOPIC: 002 - Intoduction to Blockchain ##### -->
+<!-- ##### START OF TOPIC: 002 - Intoduction to Blockchain: History ##### -->
 <details>
 <summary>002 - Intoduction to Blockchain</summary>
 
@@ -69,7 +69,34 @@
 - Permissionless
 
 </details>
-<!-- ##### END OF TOPIC: 002 - Intoduction to Blockchain ##### -->
+<!-- ##### END OF TOPIC: 002 - Intoduction to Blockchain: History ##### -->
+
+<!-- ##### START OF TOPIC: 003 - Intoduction to Blockchain: Architecture ##### -->
+<details>
+<summary>003 - Intoduction to Blockchain: Architecture</summary>
+
+# Contracts in a Centralized Platform
+- EX: Kickstarter
+- Middleman takes significant charge to process
+
+# Smart Contract
+- Immutable (Nobody can change the contract)
+- Distributed (Don't need middleman)
+
+# Structure of a Block
+## Block Header
+- Previous block hash (For tamper proof)
+- Mining statistics (timestamp, nonce, and difficulty)
+- Mekle tree root (For organizing transactions)
+## List of Transactions
+
+# Consensus
+- Permission-less protocol
+- Proof of Work algorithm (Ensures consensus over a permission-less setting based on challenge-response)
+
+</details>
+<!-- ##### END OF TOPIC: 003 - Intoduction to Blockchain: Architecture ##### -->
+
 
 # Terminology
 ## Public Ledger
