@@ -218,9 +218,57 @@
 <!-- ##### END OF TOPIC: 3. Signatures  ##### -->
 
 
+<!-- ##### START OF TOPIC: 4. Transactions and the UTXO model ##### -->
+<details>
+<summary>4. Transactions and the UTXO model</summary>
+
+# Transaction
+## Account based model
+- Sender debited, receiver credited
+- EX: Ethereum
+- Replay Attacks Problem
+
+## UTXO (Unspent Trasaction Output)
+### Transaction Inputs and Outputs
+- Input => scriptSig
+- Output => scriptPubKey
+
+### Consenses Rules
+- Sum(inputs) <= Sum(outputs)
+- For every input, Eval(scriptSig+scriptPubKey) == true
+- Output has not already beenn spent
+- lock_time
+
+### Pay to Pubkey Hash (P2PKH)
+- Checks to make sure that <sig> is valid signature for <pubkey>
+- then, pushes true onto the stack
+- transaction is considered as valid
+
+### Benefits of UTXOs
+- Help with replay attacks
+- Privacy (Can generate new pubkeys)
+
+### Downsides of UTXOs
+- Complex
+- Fungibility: blacklisting coins
+
+### UTXO set
+- Every Bitcoin node computes this from the blockchain
+- Represents valid set of coins
+- ~60M UTXOs
+- ~3GB
+
+</details>
+<!-- ##### END OF TOPIC: 4. Transactions and the UTXO model ##### -->
+
+# Concept
+- Replay Attacks
+- [scriptSig, scriptPubKey]
+- [Unspendable output]
 
 
 # Resources
 - [MIT Opencourse](https://www.youtube.com/watch?v=IJquEYhiq_U&list=PLUl4u3cNGP61KHzhg3JIJdK08JLSlcLId)
 
 # Other Resources
+
