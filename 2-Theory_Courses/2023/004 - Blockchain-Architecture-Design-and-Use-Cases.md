@@ -121,9 +121,59 @@
 # The Fabric Network
 - IBM Code Tech Talk
 
-
 </details>
 <!-- ##### END OF TOPIC: 004 - Intoduction to Blockchain: Conceptualization ##### -->
+
+
+<!-- ##### START OF TOPIC: 005 - Basic Crypto Primitives - 1##### -->
+<details>
+<summary>005 - Basic Crypto Primitives - 1</summary>
+
+# Cryptographic Hash Function
+- Input message, M
+- Message digest, H(M)
+- Collision-Free (If M1 != M2, then H(M1) != H(M2))
+- Hiding (Avalanche effect)
+- Puzzle-friendly
+- Hash function is efficient b/c the size of the digest is significantly less than the size of the original messages
+
+# SHA256 Hash Function
+- Bitcoin
+- 256 bit message digest
+
+# Hash Pointer (Tamper proof)
+- Hashchain
+- Merkle Tree
+
+</details>
+<!-- ##### END OF TOPIC: 005 - Basic Crypto Primitives - 1 ##### -->
+
+
+<!-- ##### START OF TOPIC: 006 - Basic Crypto Primitives - 2 ##### -->
+<details>
+<summary>006 - Basic Crypto Primitives - 2</summary>
+
+# Digital Signature
+- The content of the document is authenticated
+- The identity of the sender
+- Prevent non-repudiation - sender will not be able to deny about the origin of the document
+
+# Public & Private Key
+- Public Key is used for encryption of message
+- Private Key is used for decryption of message
+
+# RSA
+- Anyone can encrypt the data
+- Only the intended receiver can decrypt the data
+
+# ECDSA
+- Bitcoin uses Elliptic Curve Digital Signature Algorithm
+
+
+</details>
+<!-- ##### END OF TOPIC: 006 - Basic Crypto Primitives - 2 ##### -->
+
+
 
 
 
