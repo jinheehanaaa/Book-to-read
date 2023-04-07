@@ -261,6 +261,36 @@
 </details>
 <!-- ##### END OF TOPIC: 4. Transactions and the UTXO model ##### -->
 
+
+
+<!-- ##### START OF TOPIC: 5. Synchronization Process, Pruning ##### -->
+<details>
+<summary>5. Synchronization Process, Pruning</summary>
+
+# Header fields
+- version (4B)
+- prev hash (32B)
+- merkle root (32B)
+- time (4B)
+- diff (4B)
+- nonce (4B)
+
+# Sync Process
+- Download Headers
+- Initial Block Download (IBD)
+
+# Pruning
+- Can prune/ delete blocks after IBD with no loss of security
+
+# Blockchain data
+- Blockchains are bad databases
+- - Only keeps track of utxos, which is hard enough
+
+</details>
+<!-- ##### END OF TOPIC: 5. Synchronization Process, Pruning  ##### -->
+
+
+
 # Concept
 - Replay Attacks
 - [scriptSig, scriptPubKey]
