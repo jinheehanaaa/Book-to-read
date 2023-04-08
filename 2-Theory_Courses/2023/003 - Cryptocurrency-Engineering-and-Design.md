@@ -290,12 +290,45 @@
 <!-- ##### END OF TOPIC: 5. Synchronization Process, Pruning  ##### -->
 
 
+<!-- ##### START OF TOPIC: 6. Wallets and SPV ##### -->
+<details>
+<summary>6. Wallets and SPV</summary>
+
+# BIP32
+- Generating public key without private key
+- Can put pubkey and random data on server
+- Server can make addresses as needed
+- Observers can't link the addresses
+- Revealing P and r would allow linking addresses but not stealing funds
+
+# Wallet utxo list
+- Keep track of received payments
+- Save all the utxos to disk
+## txid
+- index
+- amount
+- which key
+- height
+- next
+- spend them
+
+# Transaction Optimization
+- Minimize number of inputs used
+
+# Simplified Payment Verification (SPV)
+- Can verify work without much data
+- Merkle verification
+
+
+</details>
+<!-- ##### END OF TOPIC: 6. Wallets and SPV  ##### -->
+
 
 # Concept
 - Replay Attacks
 - [scriptSig, scriptPubKey]
 - [Unspendable output]
-
+- BIP32
 
 # Resources
 - [MIT Opencourse](https://www.youtube.com/watch?v=IJquEYhiq_U&list=PLUl4u3cNGP61KHzhg3JIJdK08JLSlcLId)
