@@ -174,13 +174,92 @@
 <!-- ##### END OF TOPIC: 006 - Basic Crypto Primitives - 2 ##### -->
 
 
+<!-- ##### START OF TOPIC: 007 - Bitcoin Basics - 1 ##### -->
+<details>
+<summary>007 - Bitcoin Basics - 1</summary>
+
+# Sending Payment
+
+# Double Spending
+- Same bitcoin is used for more than one transactions
+- We need to prevent double spending in a decentralized network
+- Proof of work (Solution to Double Spending)
+- - <code>Y = H(x | nonce)</code>; Y, nonce are known, x is prev hash value
+
+# Bitcoin Anonymity
+- permision-less
+- Bitcoin address (Public key based on ECDSA)
+
+# Bitcoin Script
+## Sender Side (Alice, Output)
+- (Transaction, Signature, Public Key) of Alice
+## Receiver Side (Bob, Input)
+- Stack-based Bitcoin Script
+- FORTH & RPN
 
 
+</details>
+<!-- ##### END OF TOPIC: 007 - Bitcoin Basics - 1 ##### -->
+
+<!-- ##### START OF TOPIC: 008 - Bitcoin Basics - 2 ##### -->
+<details>
+<summary>008 - Bitcoin Basics - 2</summary>
+
+# Bitcoin Scripts
+- Bitcoin Scripts is inspired by FORTH Language
+## scriptSig
+- Transaction Input
+- Signature & Public Key inside scriptSig
+## scriptPubKey
+- Transaction Output
+- Use PubKey to verify the public signature
+- Number of Operations
+
+# Script Combination
+- We combine 2 script together
+- Process with similar concept of Reverse Polish Notation
+## Stack analysis for Validation (Simple way, see video for detail)
+- Push Operand <pubKey><sig>
+- OP_HASH160
+- pubKeyHash
+- OP_EQUALVERIFY OP_CHECKSIG (Equality is checked b/w the top two items in the stack)
+- OP_CHECKSIG (Signature is checked based on the top 2 stack item)
+- True
+
+
+</details>
+<!-- ##### END OF TOPIC: 008 - Bitcoin Basics - 2 ##### -->
+
+<!-- ##### START OF TOPIC: 009 - Bitcoin Basics - 3 ##### -->
+<details>
+<summary>009 - Bitcoin Basics - 3</summary>
+
+# Block Generation
+- Find nonce value to generate new block
+
+# Block Flooding
+- Transactions
+- Blocks from the miners
+
+# Block Propagation
+- 51% Rule
+
+# Block Propagation Latency
+- Information propagation in the bitcoin network (2013)
+- Mean time = 12.6 Seconds
+- 95% of the nodes can see the block within 40 seconds
+
+
+
+
+</details>
+<!-- ##### END OF TOPIC: 009 - Bitcoin Basics - 3 ##### -->
 
 
 # Terminology
 ## Public Ledger
 - Local copy
+
 
 # Resources
 - [Blockchain Architecture Design and Use Cases](https://www.youtube.com/playlist?list=PLbRMhDVUMngfxxyVLh2t2gKDUfsOdGn56)
