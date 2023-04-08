@@ -256,6 +256,49 @@
 <!-- ##### END OF TOPIC: 009 - Bitcoin Basics - 3 ##### -->
 
 
+
+<!-- ##### START OF TOPIC: 010 - Distributed Consensus ##### -->
+<details>
+<summary>010 - Distributed Consensus</summary>
+
+# 3 Types of failures
+## Crash Fault
+- A node suddendly crashes
+## Network or Partitioned Fault
+- A network fault occurs and the network gets partitioned
+## Byzantine Fault
+- A node starts behaving maliciously
+
+# Synchronous vs Asynchronous Systems
+## Synchronous
+- Wait for certain amount of time
+- Simple to implement
+## Asynchronous
+- Not much delay
+- Complex to implement
+
+# FLP85
+- Impossibility Result
+- It's impossible to achieve a concensus with a purely asynchronous distributed system in the presence if failure
+
+# Why do we require Consensus in Bitcoin Network
+- Bitcoin is a peer-to-peer network
+- Alice broadcast a transaction in this peer-to-peer network
+- All the nodes in this network need to agree on the correctness of this transaction
+- A node does not know all the peers in the netowrk - this is an open network
+- Some nodes can also initiate malicious transactions
+
+# Consensus in Bitcoin
+- Per transaction consensus (Inefficient)
+- Block based consensus (Efficient)
+
+
+</details>
+<!-- ##### END OF TOPIC: 010 - Distributed Consensus ##### -->
+
+
+
+
 # Terminology
 ## Public Ledger
 - Local copy
