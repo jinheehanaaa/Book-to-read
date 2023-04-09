@@ -296,6 +296,113 @@
 </details>
 <!-- ##### END OF TOPIC: 010 - Distributed Consensus ##### -->
 
+<!-- ##### START OF TOPIC: 011 - Consensus in Bitcoin - 1 ##### -->
+<details>
+<summary>011 - Consensus in Bitcoin - 1</summary>
+
+# Proof of WOrk (Pow)
+- An economic measure to deter service abuses by requiring some work from the service requester
+
+# Hashcash Pow
+- A textual encoding of a hashcash stamp is included in an email header
+- - Proof that the sender has expended a modest amount of CPU time calculating the stamp before sending the email
+- - It is unlikely that the sender is a spammer
+- The receiver can verify the hashcash stamp very easily
+- Any change in the header requires a change in the hashcash
+- - Brute force is the only way to find a hashcash
+
+
+
+</details>
+<!-- ##### END OF TOPIC: 011 - Consensus in Bitcoin - 1 ##### -->
+
+
+
+<!-- ##### START OF TOPIC: 012 - Consensus in Bitcoin - 2 ##### -->
+<details>
+<summary>012 - Consensus in Bitcoin - 2</summary>
+
+# Denial of Service (DoS) Attacks
+- Send lot of data to a node - they will not be able to process normal Bitcoin transactions
+
+# Breaking Bitcoin PoW
+- Bitcoin PoW is computationally difficult to break, but not impossible
+- Attackers can deploy high power servers to do more work than the total work of the blockchain
+- A known case of successful double-spending
+- - (Nov 2013) "It was discovered that the GHash.io mining pool appeared to be negaging in repeated payment fraud against BetCoin Dice, a gambling site" [Source: https://en.bitcoin.it]
+
+# Monopoly Problem
+- Tragedy of the Commons (Theory)
+- - Monopoly can increase over time
+=
+# PoW vs PoS
+## PoW (Proof of work)
+- Probability of mining a block depends on the work done by the miner
+## PoS (Proof of Stake)
+- Amount of bitcoin that the miner holds - Miner holding 1% of the Bitcoin can mine 1% of the PoS blocks
+
+# Proof of Stake (PoS)
+- Provides increased protection
+
+# Proof of Burn (PoB)
+- Miners should show proof that they have burned some coins
+- - Sent them to a verifiably un-spendable address
+- - Expensive (like PoW), but no external resources are used other than the vurned coins
+- PoW vs PoB - Real resources vs virtual/digital resources
+- PoB works by burning PoW mined cryptocurrencies
+
+# Proof of Elapsed Time (PoET)
+- Proposed by Intel, as a part of Hyperledger Sawtooth - a blockchain platform for building distributed ledger applications
+
+## Intel Software Guard Ectension (SGX)
+- The trusted code is private to the rest of the application
+- Hardware-level verification
+
+# Other Mateirals for Blockchain Consensus Algorithm
+- Analysis of hashrate-based double-spending by Meni Rosenfeld
+- The proposal of PoS
+- The Peercoin protocol
+- Hyperledger Sawtooth
+
+</details>
+<!-- ##### END OF TOPIC: 012 - Consensus in Bitcoin - 2 ##### -->
+
+
+<!-- ##### START OF TOPIC: 013 - Consensus in Bitcoin - 3 ##### -->
+<details>
+<summary>013 - Consensus in Bitcoin - 3</summary>
+
+# Mining Hardware
+## Specialized hardware
+- GPU
+- FPGA
+## ASIC
+- Released in 2013
+- Fast computation of SHA256
+
+# TerraMiner 4
+- ASIC based bitcoin mining rig
+- 2 Terahash per second
+- Cost USD 3500 approx
+
+# Mining Pool
+## Pooling of resources by the miners
+- Share the processing power over a network to mine a new block
+- Split the reward proportionally to the amount of work they contributed
+
+## Pros
+- Small miners can participate
+- Predictable mining
+## Cons
+- Leads to centralization
+- Dicourages miners for unning complete mining procedure
+
+
+
+
+</details>
+<!-- ##### END OF TOPIC: 013 - Consensus in Bitcoin - 3 ##### -->
+
 
 
 
