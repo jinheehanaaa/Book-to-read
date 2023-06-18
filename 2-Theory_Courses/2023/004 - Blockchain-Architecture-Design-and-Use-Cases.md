@@ -398,10 +398,34 @@
 - Dicourages miners for unning complete mining procedure
 
 
+</details>
+<!-- ##### END OF TOPIC: 013 - Consensus in Bitcoin - 3 ##### -->
+
+
+<!-- ##### START OF TOPIC: 014 - Permissioned Blockchain - 1 (Basics) ##### -->
+<details>
+<summary>014 - Permissioned Blockchain - 1 (Basics)</summary>
+
+- Users are authenticated a priory
+# Smart Contracts
+- A self executing contract
+- Exchange between seller and buyer
+- Smart-contract execution should always needs to be deterministic
+
+# Design Limitations
+## 1. Sequential Execution
+- throughput is inversely proportional to commit latency
+## 2. Non-deterministic Execution
+- Consider golang - iteration over a "map" may produce a different order in two executions
+## 3. Execution on all nodes
+- Make sure that all the nodes have the same states
+- We don't need to execute contracts at each node
+- We just need state synchronization across all the nodes
 
 
 </details>
-<!-- ##### END OF TOPIC: 013 - Consensus in Bitcoin - 3 ##### -->
+<!-- ##### END OF TOPIC: 014 - Permissioned Blockchain - 1 (Basics) ##### -->
+
 
 
 
@@ -409,6 +433,7 @@
 # Terminology
 ## Public Ledger
 - Local copy
+
 
 
 # Resources
